@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate số điện thoại</title>
+    <script src="phoneNumber.js"></script>
+</head>
+<body>
+<script>
+    // hợp lệ
+    var phoneNumber = '(84)-(0978489648)';
+    console.log(invalidPhoneNumber(phoneNumber));
+    var phoneNumber = '(84)-(0361234135)';
+    console.log(invalidPhoneNumber(phoneNumber));
+    // không hợp lệ
+    var phoneNumber = '(a8)-(22222222)';
+    console.log(invalidPhoneNumber(phoneNumber));
+    var phoneNumber = '(v3)-(23141233)';
+    console.log(invalidPhoneNumber(phoneNumber));
+</script>
+</body>
+</html>
